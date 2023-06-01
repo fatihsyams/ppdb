@@ -1,0 +1,37 @@
+CREATE TABLE provinsis(
+   id   INTEGER  NOT NULL PRIMARY KEY
+  ,name VARCHAR(25) NOT NULL
+);
+INSERT INTO provinsis(id,name) VALUES (12,'SUMATERA UTARA');
+INSERT INTO provinsis(id,name) VALUES (13,'SUMATERA BARAT');
+INSERT INTO provinsis(id,name) VALUES (14,'RIAU');
+INSERT INTO provinsis(id,name) VALUES (15,'JAMBI');
+INSERT INTO provinsis(id,name) VALUES (16,'SUMATERA SELATAN');
+INSERT INTO provinsis(id,name) VALUES (17,'BENGKULU');
+INSERT INTO provinsis(id,name) VALUES (18,'LAMPUNG');
+INSERT INTO provinsis(id,name) VALUES (19,'KEPULAUAN BANGKA BELITUNG');
+INSERT INTO provinsis(id,name) VALUES (21,'KEPULAUAN RIAU');
+INSERT INTO provinsis(id,name) VALUES (31,'DKI JAKARTA');
+INSERT INTO provinsis(id,name) VALUES (32,'JAWA BARAT');
+INSERT INTO provinsis(id,name) VALUES (33,'JAWA TENGAH');
+INSERT INTO provinsis(id,name) VALUES (34,'DI YOGYAKARTA');
+INSERT INTO provinsis(id,name) VALUES (35,'JAWA TIMUR');
+INSERT INTO provinsis(id,name) VALUES (36,'BANTEN');
+INSERT INTO provinsis(id,name) VALUES (51,'BALI');
+INSERT INTO provinsis(id,name) VALUES (52,'NUSA TENGGARA BARAT');
+INSERT INTO provinsis(id,name) VALUES (53,'NUSA TENGGARA TIMUR');
+INSERT INTO provinsis(id,name) VALUES (61,'KALIMANTAN BARAT');
+INSERT INTO provinsis(id,name) VALUES (62,'KALIMANTAN TENGAH');
+INSERT INTO provinsis(id,name) VALUES (63,'KALIMANTAN SELATAN');
+INSERT INTO provinsis(id,name) VALUES (64,'KALIMANTAN TIMUR');
+INSERT INTO provinsis(id,name) VALUES (65,'KALIMANTAN UTARA');
+INSERT INTO provinsis(id,name) VALUES (71,'SULAWESI UTARA');
+INSERT INTO provinsis(id,name) VALUES (72,'SULAWESI TENGAH');
+INSERT INTO provinsis(id,name) VALUES (73,'SULAWESI SELATAN');
+INSERT INTO provinsis(id,name) VALUES (74,'SULAWESI TENGGARA');
+INSERT INTO provinsis(id,name) VALUES (75,'GORONTALO');
+INSERT INTO provinsis(id,name) VALUES (76,'SULAWESI BARAT');
+INSERT INTO provinsis(id,name) VALUES (81,'MALUKU');
+INSERT INTO provinsis(id,name) VALUES (82,'MALUKU UTARA');
+INSERT INTO provinsis(id,name) VALUES (91,'PAPUA BARAT');
+INSERT INTO provinsis(id,name) VALUES (94,'PAPUA');

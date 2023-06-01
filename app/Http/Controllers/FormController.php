@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\DataOrangTua;
 use App\Models\DokumenSiswa;
 use App\Models\Provinsi;
+use App\Models\Payment;
 use App\Models\PengalamanOrganisasi;
 use App\Models\PilihJurusan;
 
@@ -58,9 +59,6 @@ class FormController extends Controller
             $dataOrangTua->alamat_ibu = $request->alamat_ibu;
             $dataOrangTua->save();
 
-
-
-
             $dokumenSiswa = new DokumenSiswa();
 
 
@@ -100,10 +98,21 @@ class FormController extends Controller
             'pilih_jurusan_dua' => $request->pilih_jurusan_dua,
            ]);
 
+           $bukti = null;
+        if ($request->skl) {
+            $bukti = $request->skl->store('data', 'public');
+        }
 
 
-        return back()->with('success', 'Form Tahap 1 Sudah Berhasil');
+
+           $userId = $formPendaftaran->id;
+            // dd($userId);
+           return view ('form/payment', compact('userId'));
+
+
     }
+
+
 
 
     public function formPendaftaranWaliMuridPost(Request $request)

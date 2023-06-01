@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FormController;
-
+use App\Http\Controllers\PaymentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +16,11 @@ use App\Http\Controllers\FormController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/about-us', function () {
+    return view('about-us');
 });
 
 Route::get('/register', [AuthController::class, 'register'])->name('register');
@@ -32,4 +36,7 @@ Route::get('/form-pendaftaran', [FormController::class, 'formPendaftaran'])->nam
 Route::post('test-post', [FormController::class, 'formPendaftaranPost'])->name('formPost');
 
 Route::get('provinsi', [SelectedController::class, 'getKota'])->name('provinsi');
+
+Route::get('payment', [PaymentController::class, 'index'])->name('index');
+Route::post('paymentPost', [PaymentController::class, 'buktiTranferPost'])->name('paymentPost');
 
